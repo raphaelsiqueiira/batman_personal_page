@@ -1,0 +1,42 @@
+article#sobre-mim {
+  background-color: var(--cor-black);
+  padding: 120px 0;
+}
+
+div.sobre-conteudo h2 {
+  color: var(--cor-w);
+  border-radius: 4px;
+}
+
+div.sobre-conteudo p {
+  color: var(--cor-3);
+  margin-top: 60px;
+}
+
+.text-deco {
+  font-weight: bold;
+}
+
+.bat-deco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0 120px 0;
+}
+
+@media (max-width: 999px) {
+  article#sobre-mim {
+    padding: 40px 0;
+  }
+
+  div.sobre-conteudo {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .bat-deco {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}

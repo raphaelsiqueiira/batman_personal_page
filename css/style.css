@@ -1,0 +1,9 @@
+@import "global.css";
+@import "./utilidades/cores.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/animacoes.css";
+
+@import "header.css";
+@import "introducao.css";
+@import "sobre.css";
+@import "habilidades.css";

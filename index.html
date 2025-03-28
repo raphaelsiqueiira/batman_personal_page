@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batman Portfólio</title>
+    <meta name="description" content="Conheça o portfólio do Batman, o Cavaleiro das Trevas. Suas habilidades, feitos e história como o maior detetive do mundo." />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <noscript>
+      <div class="noscript-message">
+        <p style="color: #b3b3b3; text-align: center; position: fixed; bottom: 0; z-index: 10000">O JavaScript está desativado em seu navegador. Algumas funcionalidades podem não funcionar corretamente.</p>
+      </div>
+    </noscript>
+
+    <header>
+      <nav>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+        <ul class="nav-list font-2-m">
+          <li class="nav-item"><a href="#sobre-section">Sobre Mim</a></li>
+          <li class="nav-item"><a href="#habilidades-section">Habilidades</a></li>
+          <li class="nav-item"><a href="#feitos">Feitos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="introducao-bg">
+      <div class="container introducao fade-top">
+        <div class="text-container">
+          <h1 class="titulo font-2-b">Batman</h1>
+          <span class="font-2-b fade-left">O cavaleiro das trevas</span>
+          <p class="font-1-l">"Eu sou a vingança. Eu sou a noite. Eu sou o Batman"</p>
+        </div>
+
+        <div id="img-intro">
+          <img src="assets/batman-desktop.png" alt="Personagem Batman com expressão seria e apresentando irritabilidade" />
+        </div>
+      </div>
+    </main>
+
+    <article id="sobre-section" class="container">
+      <div class="sobre-conteudo container">
+        <h2 class="font-2-b titulo">Sobre Mim</h2>
+        <p class="font-1-m">
+          Gotham é um campo de batalha, e eu sou sua última linha de defesa. Minha mente é precisa, meu corpo é indomável, minha vontade é inabalável. O medo é minha arma, a disciplina é minha armadura. Não há mistério
+          que eu não desvende, nem escuridão onde eu não possa andar. Eu sou a vingança. Eu sou o
+          <span class="text-deco">Cavaleiro das Trevas</span>.
+        </p>
+      </div>
+      <div class="bat-deco">
+        <img src="assets/logo-morcego.svg" alt="Icone de um Morcego para representar o simbolo do Batman" />
+      </div>
+    </article>
+
+    <article id="habilidades-bg">
+      <div id="habilidades-section" class="container">
+        <h2 class="font-3-b titulo">Habilidades</h2>
+        <div class="habilidades-container">
+          <div class="habilidades">
+            <div class="add-icone">
+              <div id="combate-icone"></div>
+              <p class="font-4-r typing-effect">Combate - mestre em artes marciais e taticas de luta</p>
+            </div>
+            <div class="galeria-img">
+              <img src="assets/img-combate-1.png" alt="Batman acertando uma cotovelada com o braço esquerdo no rosto de um criminoso" />
+              <img src="assets/img-combate-2.png" alt="Batman imobilizando um criminoso pelo braço direto, colocando o inimigo de joelhos" />
+            </div>
+          </div>
+          <div class="habilidades">
+            <div class="add-icone">
+              <div id="investigacao-icone"></div>
+              <p class="font-4-r typing-effect">Investigação – Análise forense, rastreamento e infiltração</p>
+            </div>
+            <div class="galeria-img">
+              <img src="assets/batman-investigacao.png" alt="Batman conversando com o comissário Jim Gordon, cena do filme Batman com o ator Robert Pattinson" />
+              <img src="assets/batman-investigacao-2.png" alt="Xicara de café com um simbolo de interrogação na espuma" />
+              <img src="assets/investigacao-3.png" alt="Cena do filme Batman com o ator Robert Pattinson, onde ele está analisando varias pistas do caso colocadas no chão " />
+            </div>
+          </div>
+          <div class="habilidades">
+            <div class="add-icone">
+              <div id="estrategia-icone"></div>
+              <p class="font-4-r typing-effect">Estratégia – Táticas de guerra e manipulação psicológica</p>
+            </div>
+            <div class="galeria-img">
+              <img
+                src="assets/batman-estrategia.png"
+                alt="Cena do filme Batman versus Superman, onde o Batman está pisando no peito do Superman, enquanto superman está caido no chão. Batman está segurando uma lança com ponta de criptonita"
+              />
+              <img src="assets/batman-estrategia-2.png" alt="Cena do filme Batman versus Superman, onde o Batman está vestido com sua armadura e olhando para cima" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <script src="script/mobile-navbar.js"></script>
+    <script src="script/typing-text.js"></script>
+  </body>
+</html>

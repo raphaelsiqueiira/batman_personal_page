@@ -1,0 +1,89 @@
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeTop {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-top {
+  animation: fadeTop 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-left {
+  animation: fadeLeft 1.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 2px #00ffcc;
+  }
+  25% {
+    text-shadow: -2px -2px #ff0000;
+  }
+  50% {
+    text-shadow: 2px -2px #00ffcc;
+  }
+  75% {
+    text-shadow: -2px 2px #ff00ff;
+  }
+  100% {
+    text-shadow: 2px 2px #ffdd00;
+  }
+}
+
+.glitch {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--cor-4);
+  animation: glitch 0.2s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media (max-width: 999px) {
+  .fade-left {
+    animation: fadeLeft 0s ease-out forwards;
+    opacity: 0;
+  }
+}
