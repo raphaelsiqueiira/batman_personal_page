@@ -37,39 +37,30 @@
   overflow-x: auto;
   white-space: nowrap;
   padding-bottom: 12px;
+  scroll-snap-type: x mandatory;
 }
 
 .galeria-img img {
   width: 482px;
   height: 100%;
+  scroll-snap-align: center;
 }
 
-.galeria-img::-webkit-scrollbar {
-  height: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--cor-4);
-  border-radius: 4px;
-  cursor: pointer;
+.icone-habilidade {
+  width: 32px;
+  height: 32px;
 }
 
 #combate-icone {
-  background: url("../assets/icone-soco.svg");
-  width: 32px;
-  height: 32px;
+  background-image: url("../assets/habilidades-img/icone-soco.svg");
 }
 
 #investigacao-icone {
-  background: url("../assets/icone-investigacao.svg");
-  width: 32px;
-  height: 32px;
+  background-image: url("../assets/habilidades-img/icone-investigacao.svg");
 }
 
 #estrategia-icone {
-  background: url("../assets/icone-estrategia.svg");
-  width: 32px;
-  height: 32px;
+  background-image: url("../assets/habilidades-img/icone-estrategia.svg");
 }
 
 .typing-effect {
@@ -125,7 +116,7 @@
 
   .typing-effect.animate-typing {
     opacity: 1;
-    white-space: wrap;
+    white-space: normal;
     overflow: auto;
     border-right: none;
     width: 100%;

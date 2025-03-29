@@ -1,0 +1,139 @@
+#feitos-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 120px;
+  margin-top: 120px;
+}
+
+#feitos-section h2 {
+  text-align: center;
+}
+
+.galeria-viloes {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 30px;
+  padding: 3.75rem 2rem;
+}
+
+.vilao-card {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  scroll-snap-align: center;
+  cursor: pointer;
+  transition: scale 0.25s ease-in, opacity 0.25s ease-in;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &:hover {
+    scale: 1.1;
+    filter: brightness(1) blur(0px);
+    text-shadow: 0 0 5px rgba(219, 255, 219, 0.7), 0 0 10px rgba(216, 255, 216, 0.5);
+  }
+}
+
+.vilao-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+  transition: filter 0.25s ease-in;
+}
+
+.galeria-viloes:has(.vilao-card:hover) .vilao-card:not(:hover) {
+  opacity: 0.7;
+  filter: blur(2px) grayscale(100%);
+}
+
+.situacao-detido {
+  filter: sepia(1) hue-rotate(100deg) saturate(2) brightness(1) opacity(0.85);
+  border: 2px solid var(--cor-detido);
+}
+
+.situacao-detido .vilao-info {
+  filter: sepia(1) hue-rotate(100deg) saturate(2) brightness(1) opacity(0.85);
+}
+
+.situacao-investigacao {
+  filter: sepia(1) hue-rotate(-20deg) saturate(2.5) brightness(1) opacity(0.85);
+  border: 2px solid var(--cor-investigacao);
+}
+
+.situacao-investigacao .vilao-info {
+  filter: sepia(1) hue-rotate(-20deg) saturate(2.5) brightness(1) opacity(0.85);
+}
+
+.situacao-fugitivo {
+  filter: sepia(1) hue-rotate(-40deg) saturate(3) brightness(1) opacity(0.9);
+  border: 2px solid var(--cor-fugitivo);
+}
+
+.situacao-fugitivo .vilao-info {
+  filter: sepia(1) hue-rotate(-40deg) saturate(3) brightness(1) opacity(0.9);
+}
+
+.vilao-card:hover {
+  filter: brightness(1) blur(0px);
+  text-shadow: 0 0 5px rgba(219, 255, 219, 0.7), 0 0 10px rgba(216, 255, 216, 0.5);
+}
+
+.vilao-info {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, #0a0f08, #0d1a0f, #102a12, #081b0b);
+  padding: 10px;
+  border-radius: 0 0 3px 3px;
+  transition: all 0.25s ease-in;
+  flex-grow: 1;
+  color: var(--cor-3);
+  text-shadow: 0 0 5px rgba(219, 255, 219, 0.7), 0 0 8px rgba(216, 255, 216, 0.5);
+}
+
+.vilao-card:hover .vilao-info {
+  text-shadow: 0 0 8px rgba(51, 255, 51, 0.8), 0 0 10px rgba(51, 255, 51, 0.6);
+}
+
+.nome-vilao {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.vilao-info .situacao {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.vilao-info p {
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  #feitos-section {
+    gap: 40px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+
+  .galeria-viloes {
+    gap: 15px;
+    padding: 12px;
+  }
+
+  .vilao-card {
+    max-width: 90%;
+    padding: 0px;
+  }
+  .vilao-card:hover {
+    scale: 1;
+  }
+
+  .vilao-card img {
+    height: 250px;
+  }
+}

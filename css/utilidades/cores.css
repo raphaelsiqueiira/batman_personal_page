@@ -2,8 +2,12 @@
   --cor-black: #000000;
   --cor-0: #0d0d0d;
   --cor-1: #141414;
-  --cor-2: #737373;
+  --cor-2: #505050;
   --cor-3: #b3b3b3;
   --cor-4: #2499ff;
   --cor-w: #f9f9f9;
+
+  --cor-detido: #2ecc7086;
+  --cor-investigacao: #f1c40f85;
+  --cor-fugitivo: #E74C3C86;
 }

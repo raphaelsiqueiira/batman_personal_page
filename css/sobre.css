@@ -5,7 +5,6 @@ article#sobre-mim {
 
 div.sobre-conteudo h2 {
   color: var(--cor-w);
-  border-radius: 4px;
 }
 
 div.sobre-conteudo p {
@@ -21,7 +20,7 @@ div.sobre-conteudo p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 100px 0 120px 0;
+  margin: 100px 0 120px;
 }
 
 @media (max-width: 999px) {
@@ -33,8 +32,11 @@ div.sobre-conteudo p {
     font-size: 16px;
     margin-top: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
+  
   .bat-deco {
     margin-top: 40px;
     margin-bottom: 60px;

@@ -6,8 +6,19 @@ body {
   box-sizing: border-box;
   background-color: var(--cor-black);
 }
+
 body::-webkit-scrollbar {
   width: 0;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cor-4);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 h1,
@@ -36,6 +47,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  -webkit-user-drag: none;
 }
 
 .container {
