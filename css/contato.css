@@ -1,0 +1,87 @@
+#contato-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato-bg {
+  background: var(--cor-1);
+}
+
+/* Botão */
+.botao-batsinal {
+  padding: 12px 24px;
+  font-family: "Orbitron", sans-serif;
+  background-color: var(--cor-4);
+  border: 3px solid var(--cor-black);
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: 0.5s ease;
+}
+
+.botao-batsinal:hover {
+  background-color: #208ceb;
+  scale: 1.02;
+}
+
+/* Overlay */
+#batsinal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+#batsinal-content {
+  background-color: rgb(143, 143, 69);
+  width: 750px;
+  height: 750px;
+  padding: 10px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#batsinal-content img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes opac {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animar-batsinal {
+  animation: opac 10s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  #contato-section {
+    height: 50vh;
+  }
+  #batsinal-content {
+    width: 300px;
+    height: 300px;
+  }
+
+  .botao-batsinal {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
