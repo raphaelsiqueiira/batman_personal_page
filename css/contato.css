@@ -9,7 +9,6 @@
   background: var(--cor-1);
 }
 
-/* Botão */
 .botao-batsinal {
   padding: 12px 24px;
   font-family: "Orbitron", sans-serif;
@@ -26,7 +25,6 @@
   scale: 1.02;
 }
 
-/* Overlay */
 #batsinal-overlay {
   display: none;
   position: fixed;
@@ -34,32 +32,39 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: black;
+  background: radial-gradient(circle, #000000 60%, #1a1a1a 100%);
   z-index: 9999;
   justify-content: center;
   align-items: center;
+  animation: flickerBg 0.15s infinite;
 }
 
 #batsinal-content {
-  background-color: rgb(143, 143, 69);
+  background: radial-gradient(circle at center, #d4d4d4 20%, #8b8b3c 60%, transparent 80%);
   width: 750px;
   height: 750px;
   padding: 10px;
-  border-radius: 100%;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 60px 20px #fff00088;
+  animation: zoomFade 7s ease-out forwards;
+  border: 40px solid var(--cor-black);
+  position: relative;
 }
 
 #batsinal-content img {
   width: 100%;
   height: auto;
+  filter: drop-shadow(0 0 20px #ffff99);
 }
 
-@keyframes opac {
+/* Animações */
+@keyframes zoomFade {
   0% {
     opacity: 0;
-    transform: scale(0.7);
+    transform: scale(0.6);
   }
   100% {
     opacity: 1;
@@ -67,14 +72,21 @@
   }
 }
 
-.animar-batsinal {
-  animation: opac 10s ease-in-out;
+@keyframes flickerBg {
+  0%,
+  100% {
+    background-color: #000000;
+  }
+  50% {
+    background-color: #0a0a0a;
+  }
 }
 
 @media (max-width: 768px) {
   #contato-section {
     height: 50vh;
   }
+
   #batsinal-content {
     width: 300px;
     height: 300px;
